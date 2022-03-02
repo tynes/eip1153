@@ -1,0 +1,8 @@
+[submodule "go-ethereum"]
+	path = go-ethereum
+	url = https://github.com/tynes/go-ethereum.git
+	branch = eip1153
+[submodule "solidity"]
+	path = solidity
+	url = https://github.com/cfromknecht/solidity.git
+	branch = transient-keyword
