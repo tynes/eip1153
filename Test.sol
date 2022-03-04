@@ -7,7 +7,7 @@ contract Test {
         assembly {
             tstore(0, frob)
             baz := tload(0)
-		}
+        }
         return baz;
     }
 }
