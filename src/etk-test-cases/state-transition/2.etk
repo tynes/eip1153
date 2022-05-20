@@ -1,0 +1,13 @@
+# loading after storing returns the stored value: TSTORE(x, y), TLOAD(x) returns y
+# 
+# expect: storage slot 0 to have value 88
+
+push1 88
+push1 0
+tstore
+
+push1 0
+tload
+
+push1 0
+sstore

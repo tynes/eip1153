@@ -1,0 +1,8 @@
+# load arbitrary value is 0 at beginning of transaction: TLOAD(x) is 0
+# 
+# expect storage slot 0 to have value 0
+
+push1 0
+tload
+push1 0
+sstore

@@ -6,3 +6,7 @@
 	path = solidity
 	url = https://github.com/cfromknecht/solidity.git
 	branch = transient-keyword
+[submodule "etk"]
+	path = etk
+	url = https://github.com/tynes/etk
+	branch = eip1153

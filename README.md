@@ -7,7 +7,7 @@ its easy for developers to test out the possibilities.
 
 ```bash
 $ git submodule init
-$ git submodule update
+$ git submodule update --remote
 ```
 
 To build and start geth:
@@ -50,4 +50,25 @@ address is printed in the output of `deploy.sh`.
 
 ```bash
 $ seth call <contract address> 'bar(uint256)(uint256)' 100
+```
+
+## Generate test cases
+
+Update git submodules to get the fork of etk that supports the eip
+
+```bash
+git submodule init
+git submodule update --remote
+```
+
+`cd` into etk and install it using:
+
+```bash
+cargo install --features cli etk-asm etk-dasm
+```
+
+Implement test cases using etk in `src/etk-test-cases` then generate the bytecode using:
+
+```bash
+./generate-test-cases.sh output.txt
 ```
