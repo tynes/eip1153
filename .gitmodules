@@ -9,3 +9,4 @@
 [submodule "etk"]
 	path = etk
 	url = https://github.com/tynes/etk
+	branch = eip1153
