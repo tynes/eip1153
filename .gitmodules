@@ -4,5 +4,5 @@
 	branch = eip1153
 [submodule "solidity"]
 	path = solidity
-	url = https://github.com/cfromknecht/solidity.git
+	url = https://github.com/tynes/solidity.git
 	branch = transient-keyword
